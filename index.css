@@ -18,7 +18,7 @@
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: var(--bg-light);
+    background-color: var(--white);
     color: var(--dark);
 }
 
@@ -59,7 +59,7 @@ nav {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #fce7f3 0%, #ffffff 100%);
+    background: var(--bg-light);
     border-bottom: 1px solid #fbcfe8;
 }
 

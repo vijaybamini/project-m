@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftShop | Modern Minimalist Style</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+        }
+
+        /* Product Grid */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 200px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            background: var(--dark);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">SwiftShop</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Catalog</a>
+            <a href="#">Cart (0)</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>New Summer Collection</h1>
+        <p>Quality essentials delivered to your door.</p>
+    </header>
+
+    <main class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3>Classic White Tee</h3>
+                    <p class="price">$25.00</p>
+                    <a href="#" class="buy-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3>Canvas Backpack</h3>
+                    <p class="price">$55.00</p>
+                    <a href="#" class="buy-btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">Product Image</div>
+                <div class="product-info">
+                    <h3>Minimalist Watch</h3>
+                    <p class="price">$120.00</p>
+                    <a href="#" class="buy-btn">Add to Cart</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SwiftShop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
